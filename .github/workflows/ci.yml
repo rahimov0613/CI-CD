@@ -30,8 +30,8 @@ jobs:
         run: npm run build
 
     deploy:
-    needs: build-test
-    runs-on: ubuntu-latest
+     needs: build-test
+     runs-on: ubuntu-latest
 
     steps:
       - name: EC2 ga SSH ulanish va deploy qilish
