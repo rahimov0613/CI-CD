@@ -9,22 +9,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      -name: Kodni klonlash
-      uses: actions/checkout@v3
+      - name: Kodni klonlash
+        uses: actions/checkout@v3
 
-      -name: Node.js o'rnatish
-      uses: actions/setup-node@v3
-      with:
-      node-version: 18.x
+      - name: Node.js o'rnatish
+        uses: actions/setup-node@v3
+        with:
+         node-version: 18.x
 
-      -name: Dependenciyalarni o'rnatish
-      run : npm run ci
+      - name: Dependenciyalarni o'rnatish
+        run : npm run ci
 
-      -name: Lint tekshirish
-      run: npm run lint
+      - name: Lint tekshirish
+        run: npm run lint
 
-      -name: Testlarni ishga tushirish
-      run: npm run test
+      - name: Testlarni ishga tushirish
+        run: npm run test
 
-      -name: Build qilish
-      run: npm run build
+      - name: Build qilish
+        run: npm run buildgit remote add origin https://github.com/rahimov0613/CI-CD.git
