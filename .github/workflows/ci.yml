@@ -18,7 +18,7 @@ jobs:
          node-version: 18.x
 
       - name: Dependenciyalarni o'rnatish
-        run : npm run ci
+        run : npm ci
 
       - name: Lint tekshirish
         run: npm run lint
