@@ -27,4 +27,4 @@ jobs:
         run: npm run test
 
       - name: Build qilish
-        run: npm run buildgit remote add origin https://github.com/rahimov0613/CI-CD.git
+        run: npm run build
