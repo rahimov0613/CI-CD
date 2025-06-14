@@ -41,7 +41,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            cd /var/www/nestjsTest
+            cd /home/ubuntu/n-18/6-dars/CI-CD
             git pull origin main
             npm install --production
             npm run build
