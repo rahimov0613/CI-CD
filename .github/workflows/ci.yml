@@ -33,7 +33,7 @@ jobs:
      needs: build-test
      runs-on: ubuntu-latest
 
-    steps:
+     steps:
       - name: EC2 ga SSH ulanish va deploy qilish
         uses: appleboy/ssh-action@master
         with:
